@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'sevenseg';
+  src: url('fonts/sevenseg.eot?fllges');
+  src: url('fonts/sevenseg.eot?fllges#iefix') format('embedded-opentype'),
+    url('fonts/sevenseg.ttf?fllges') format('truetype'),
+    url('fonts/sevenseg.woff?fllges') format('woff'),
+    url('fonts/sevenseg.svg?fllges#sevenseg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.seven-segment {
+  font-family: 'sevenseg';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 1em;
+  font-family: sans-serif;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack>* {
+  margin-block: 0;
+}
+
+.stack>*+* {
+  margin-block-start: var(--space, 0.5rem);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  background-color: #1b244b;
+  border-radius: 1em;
+  padding: 2em;
+  border-color: #9aabd8;
+  color: white;
+}
+
+.container>div {
+  text-align: center;
+
+}
+
+.buttons {
+  font-family: 'sevenseg';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+button {
+  border: solid #9aabd8 1px;
+  background-color: inherit;
+  border-radius: .25em;
+  color: #9aabd8
+}
+
+.score {
+  font-family: 'sevenseg';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: right;
+  font-size: 72pt;
+  color: #d41a1a;
+  background-color: #000000;
+  border-radius: 5%;
+  width: 2ch;
+  padding: 12px;
+}
