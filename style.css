@@ -82,6 +82,6 @@ button {
   color: #d41a1a;
   background-color: #000000;
   border-radius: 5%;
-  width: 3ch;
+  min-width: 3ch;
   padding: 12px;
 }
